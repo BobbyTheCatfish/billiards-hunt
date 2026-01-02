@@ -14,6 +14,14 @@ body, header {
     background-color: #155843;
 }
 
+a {
+    color:aqua;
+}
+
+a:visited {
+    color: aqua;
+}
+
 header {
     color: white;
 }
