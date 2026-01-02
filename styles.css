@@ -1,0 +1,79 @@
+:root {
+    --color: blueviolet;
+    --stripe-size: 15%;
+    --stripe-angle: 90deg;
+}
+
+body, header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    user-select: none;
+    background-color: #155843;
+}
+
+header {
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#ballsPicked {
+    margin-bottom: 40px;
+}
+
+button {
+    color: white;
+    font-size: large;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: darkgray;
+    cursor: unset;
+}
+
+button:enabled:hover {
+    background-color: #222;
+}
+
+.circle {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball {
+    width: 300px;
+    max-width: 100vh;
+    background-color: var(--color);
+    border: 1px solid black;
+}
+
+
+.ballUnpicked {
+    background-color: whitesmoke;
+}
+
+
+.striped {
+    background-color: unset;
+    background: linear-gradient(var(--stripe-angle), #FFF var(--stripe-size), var(--color) var(--stripe-size), var(--color) calc(100% - var(--stripe-size)), #FFF calc(100% - var(--stripe-size)), #FFF 100%);
+}
+
+.innerNumber {
+    background-color: white;
+    width: 40%;
+    font-size: 50px;
+}
